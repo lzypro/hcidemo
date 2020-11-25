@@ -50,7 +50,7 @@ body {
 }
 
 .hero-section {
-    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)), url(Assets/hero-background.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)), url(src/hero-background.jpg);
     background-size: cover;
     background-position: center, bottom;
 }
@@ -63,8 +63,8 @@ body {
     align-items: center;
 }
 
-.concept-video {
-    max-width: 1032px;
+.concept-image {
+    max-width: 808px;
 }
 
 .section-title {
