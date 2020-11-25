@@ -1,0 +1,16 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="26" r="16" stroke="#0080FF" stroke-width="4"/>
+<rect x="20" y="2" width="8" height="3" rx="1" fill="#0080FF"/>
+<rect x="38.1213" y="6" width="8" height="3" rx="1" transform="rotate(45 38.1213 6)" fill="#0080FF"/>
+<rect width="8" height="3" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 9.65686 6)" fill="#0080FF"/>
+<rect x="23" y="18" width="2" height="9" rx="1" fill="#0080FF"/>
+<rect x="23" y="10" width="2" height="4" rx="1" fill="#0080FF"/>
+<rect x="23" y="38" width="2" height="4" rx="1" fill="#0080FF"/>
+<rect x="40" y="25" width="2" height="4" rx="1" transform="rotate(90 40 25)" fill="#0080FF"/>
+<rect x="12" y="25" width="2" height="4" rx="1" transform="rotate(90 12 25)" fill="#0080FF"/>
+<rect x="34.6066" y="13.979" width="2" height="4" rx="1" transform="rotate(45 34.6066 13.979)" fill="#0080FF"/>
+<rect x="14.8076" y="33.7778" width="2" height="4" rx="1" transform="rotate(45 14.8076 33.7778)" fill="#0080FF"/>
+<rect x="11.9792" y="15.3936" width="2" height="4" rx="1" transform="rotate(-45 11.9792 15.3936)" fill="#0080FF"/>
+<rect x="31.7782" y="35.1924" width="2" height="4" rx="1" transform="rotate(-45 31.7782 35.1924)" fill="#0080FF"/>
+<circle cx="24" cy="26" r="2" fill="#0080FF"/>
+</svg>
