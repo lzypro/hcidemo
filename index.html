@@ -3,6 +3,15 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <link rel="stylesheet" href="dist/accordion.css">
+        <script src="dist/accordion.min.js"></script>
+        
     </head>
     <body>
         <img src="src/smartx-logo.svg" alt="SmartX Logo" class="smartx-logo">
@@ -138,8 +147,73 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
+        </section>
+        <section class="case-section">
+            <h2 class="section-title">超融合的应用场景</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="case-card cloud">私有云</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-card building">企业级应用</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-card code">服务器虚拟化</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-card water">分支机构</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-card desktop">桌面虚拟化</div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <script>var swiper = new Swiper('.swiper-container',
+            {
+                direction: 'horizontal',
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                slidesPerView: 3,
+                spaceBetween: 24,
+            });</script>
+        </section>
+        <section class="question-section">
+            <h2 class="section-title">常见问题</h2>
+            <div class="accordion-container">
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button class="ac-trigger">超融合软件还是一体机？</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Content 1</p>
+                  </div>
+                </div>
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button class="ac-trigger">传统架构上的应用如何迁移到超融合？</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Content 2</p>
+                  </div>
+                </div>
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button class="ac-trigger">超融合架构如何利用已有的设备与资源？</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Content 3</p>
+                  </div>
+                </div>
+            </div>
+            <script>var accordion = new Accordion('.accordion-container');</script>
+
         </section>
     </body>
 </html>
