@@ -14,6 +14,20 @@ gsap.to(".scrolling-arrow", {
     repeat: 6,
     });
 
-gsap.from(".concept-title", {scrollTrigger: ".concept-title", duration: 1, delay: 0.5, y: 20, opacity: 0, ease: "power1"});
+gsap.from(".concept-title", {
+    scrollTrigger: {
+        trigger: ".concept-text",
+        scrub: true,
+        start: "top bottom",
+        end: "top center"
+      }, 
+    y: 20, opacity: 0, ease: "power1"});
 
-gsap.from(".concept-text", {scrollTrigger: ".concept-text", duration: 1, delay: 0.7, y: 20, opacity: 0, ease: "power1"});
+gsap.from(".concept-text", {
+    scrollTrigger: {
+        trigger: ".concept-text",
+        scrub: true,
+        start: "top bottom",
+        end: "top center"
+      },
+    y: 80, opacity: 0, ease: "power1"});
