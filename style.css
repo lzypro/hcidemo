@@ -104,7 +104,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0px;
+    padding: 60px 0px 20px 0px;
     background-image: linear-gradient(rgba(247,251,254,1), rgba(255,255,255,1));
 }
 
@@ -128,7 +128,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0px;
+    padding: 20px 0px 100px 0px;
 }
 
 .software-structure-image {

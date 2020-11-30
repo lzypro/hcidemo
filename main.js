@@ -16,7 +16,7 @@ gsap.to(".scrolling-arrow", {
 
 gsap.from(".concept-title", {
     scrollTrigger: {
-        trigger: ".concept-text",
+        trigger: ".concept-title",
         scrub: true,
         start: "top bottom",
         end: "top center"
@@ -30,4 +30,58 @@ gsap.from(".concept-text", {
         start: "top bottom",
         end: "top center"
       },
+    y: 80, opacity: 0, ease: "power1"});
+
+gsap.from(".structure-title", {
+    scrollTrigger: {
+        trigger: ".structure-title",
+        scrub: true,
+        start: "top bottom",
+        end: "top center"
+        }, 
+    y: 20, opacity: 0, ease: "power1"});
+
+gsap.from(".structure-text", {
+    scrollTrigger: {
+        trigger: ".structure-text",
+        scrub: true,
+        start: "top bottom",
+        end: "top center"
+        },
+    y: 80, opacity: 0, ease: "power1"});
+
+gsap.from(".structure-diagram", {
+    scrollTrigger: {
+        trigger: ".structure-diagram",
+        scrub: true,
+        start: "top bottom",
+        end: "top center"
+        }, 
+    y: 80, opacity: 0, ease: "power1"});
+
+gsap.from(".software-structure-title", {
+    scrollTrigger: {
+        trigger: ".software-structure-title",
+        scrub: true,
+        start: "top bottom",
+        end: "top center"
+        }, 
+    y: 20, opacity: 0, ease: "power1"});
+
+gsap.from(".highlight-text-group", {
+    scrollTrigger: {
+        trigger: ".highlight-text-group",
+        scrub: true,
+        start: "top bottom",
+        end: "top center"
+        }, 
+    y: 80, opacity: 0, ease: "power1"});
+
+gsap.from(".software-structure-image", {
+    scrollTrigger: {
+        trigger: ".software-structure-image",
+        scrub: true,
+        start: "top bottom",
+        end: "top center"
+        }, 
     y: 80, opacity: 0, ease: "power1"});
