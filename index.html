@@ -3,15 +3,6 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <link rel="stylesheet" href="dist/accordion.css">
-        <script src="dist/accordion.min.js"></script>
-        
     </head>
     <body>
         <img src="src/smartx-logo.svg" alt="SmartX Logo" class="smartx-logo">
@@ -115,7 +106,7 @@
         <section class="article-section">
             <h2 class="section-title highlight-section-title">超融合与其它概念</h2>
             <div class="article-group">
-                <div class="article-card">
+                <div class="article-card" id="hci-and-virtualization-card">
                     <img src="src/article-cover-virtualization.png" alt="Article Cover Virtualization" class="article-cover">
                     <div class="article-info">
                         <p class="article-caption">超融合与</p>
@@ -149,72 +140,36 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="case-section">
-            <h2 class="section-title">超融合的应用场景</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="case-card cloud">私有云</div>
+            <div class="modal" id="hci-and-virtualization-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div></div>
+                        <h2 class="section-title">超融合与虚拟化</h2>
+                        <img src="src/close.svg" alt="" class="closeIcon" id="close-icon">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="case-card building">企业级应用</div>
+                    <h3 class="paragraph-title">服务器虚拟化技术</h3>
+                    <p class="article-text">服务器虚拟化技术已经在企业数据中心得到广泛的应用，其核心是将服务器的计算资源虚拟化，使用虚拟机代替物理服务器去承载业务负载。其中 VMware vSphere、Citrix XenServer、Microsoft Hyper-V 、KVM 等都是为人熟知的服务器虚拟化软件，而服务器虚拟化软件本身并不具备数据存储的功能，因此一般需要配合集中式共享存储一起使用。</p>
+                    <h3 class="paragraph-title">超融合技术不止是服务器虚拟化</h3>
+                    <p class="article-text">超融合架构以虚拟机为中心，为业务负载提供运行环境。因此，超融合技术不单包含了服务器虚拟化功能，它也包含了软件定义存储功能（为虚拟机提供持久化共享存储服务）、统一的管理平台以及其他围绕虚拟机提供的高级功能。</p>
+                    <h3 class="paragraph-title">超融合软件对不同虚拟化平台的支持</h3>
+                    <p class="article-text">不同的企业用户使用的服务器虚拟化技术可能并不相同，甚至在企业内部也有可能因为业务需求或其他原因使用了多种服务器虚拟化技术，因此超融合软件支持多种 hypervisor （服务器虚拟化软件）非常必要的。</p>
+                    <h3 class="paragraph-title">SMTX OS 兼容多种 Hypervsior</h3>
+                    <div class="logo-group">
+                        <div class="logo-container">
+                            <img src="src/smartx-logo-large.svg" alt="SmartX Logo" class="smartx-logo-large">
+                            <p class="logo-caption">SMTX OS 虚拟机</p>
+                        </div>
+                        <div class="logo-container">
+                            <img src="src/vmware-logo.svg" alt="VMware Logo" class="vmware-logo">
+                            <p class="logo-caption">VMware vSphere</p>
+                        </div>
+                        <div class="logo-container">
+                            <img src="src/citrix-logo.svg" alt="Citrix Logo" class="citrix-logo">
+                            <p class="logo-caption">Citrix XenServer</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="case-card code">服务器虚拟化</div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="case-card water">分支机构</div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="case-card desktop">桌面虚拟化</div>
-                    </div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <script>var swiper = new Swiper('.swiper-container',
-            {
-                direction: 'horizontal',
-                loop: true,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                slidesPerView: 3,
-                spaceBetween: 24,
-            });</script>
-        </section>
-        <section class="question-section">
-            <h2 class="section-title">常见问题</h2>
-            <div class="accordion-container">
-                <div class="ac">
-                  <h2 class="ac-header">
-                    <button class="ac-trigger">超融合软件还是一体机？</button>
-                  </h2>
-                  <div class="ac-panel">
-                    <p class="ac-text">Content 1</p>
-                  </div>
-                </div>
-                <div class="ac">
-                  <h2 class="ac-header">
-                    <button class="ac-trigger">传统架构上的应用如何迁移到超融合？</button>
-                  </h2>
-                  <div class="ac-panel">
-                    <p class="ac-text">Content 2</p>
-                  </div>
-                </div>
-                <div class="ac">
-                  <h2 class="ac-header">
-                    <button class="ac-trigger">超融合架构如何利用已有的设备与资源？</button>
-                  </h2>
-                  <div class="ac-panel">
-                    <p class="ac-text">Content 3</p>
-                  </div>
                 </div>
             </div>
-            <script>var accordion = new Accordion('.accordion-container');</script>
-            
         </section>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>

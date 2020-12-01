@@ -266,6 +266,13 @@ body {
     background-color: #ffffff;
     border-radius: 8px;
     margin: 0px 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.article-card:hover {
+    transform: translateY(-12px);
+    cursor: pointer;
+    
 }
 
 .article-info {
@@ -293,66 +300,60 @@ body {
     margin: 0px;
 }
 
-.case-section {
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    max-width: 760px;
+    padding: 27px 32px 56px 32px;
+    border-radius: 8px;
+    margin: 8% auto;
+    width: 100%;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.logo-group {
+    display: flex;
+    margin-top: 32px;
+}
+
+.logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 0px;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    min-height: 244.5px;
-    margin-top: 64px;
-}
-
-.case-card {
-    width: 100%;
-    height: 100%;
-    max-width: 504px;
-    min-height: 244.5px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    color: #ffffff;
+.paragraph-title {
+    color: #020F1D;
     font-size: 24px;
-    font-weight: bold;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.46);
+    line-height: 200%;
+    margin: 24px 0px 0px 0px;
 }
 
-.cloud {
-    background-image: url(src/photo-datacenter.png);
+.article-text {
+    color: #020F1D;
+    font-size: 20px;
+    line-height: 200%;
+    margin: 8px 0px 0px 0px;
 }
 
-.building {
-    background-image: url(src/photo-building.png);
-}
-
-.code {
-    background-image: url(src/photo-code.png);
-}
-
-.water {
-    background-image: url(src/photo-water.png);
-}
-
-.desktop {
-    background-image: url(src/photo-desktop.png);
-}
-
-.question-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 0px;
-}
-
-.accordion-container {
-    width: 100%;
-    max-width: 680px;
-    margin-top: 48px;
+#close-icon {
+    cursor: pointer;
 }
 

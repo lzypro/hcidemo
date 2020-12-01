@@ -1,3 +1,5 @@
+// Animation
+
 gsap.from(".hero-section", {duration: 1.2, opacity: 0, ease: "power1"});
 
 gsap.from(".title-caption", {duration: 1, y: 20, opacity: 0, ease: "power1"});
@@ -85,3 +87,27 @@ gsap.from(".software-structure-image", {
         end: "top center"
         }, 
     y: 80, opacity: 0, ease: "power1"});
+
+// Modal
+
+var modal = document.getElementById("hci-and-virtualization-modal");
+var card = document.getElementById("hci-and-virtualization-card");
+var closeIcon = document.getElementById("close-icon");
+
+card.onclick = function() {
+    modal.style.display = "block";
+    document.querySelector("body").style.overflow = 'hidden';
+}
+
+closeIcon.onclick = function() {
+    modal.style.display = "none";
+    document.querySelector("body").style.overflow = 'auto';
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.querySelector("body").style.overflow = 'hidden';
+    }
+}
+
