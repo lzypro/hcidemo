@@ -23,6 +23,9 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)), url(src/hero-background-low-quality.jpg);
+    background-size: cover;
+    background-position: center, bottom;
 }
 
 .page-title-group {
@@ -47,12 +50,6 @@ body {
 
 .scrolling-arrow {
     margin-bottom: 80px;
-}
-
-.hero-section {
-    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)), url(src/hero-background.jpg);
-    background-size: cover;
-    background-position: center, bottom;
 }
 
 .concept-section {
